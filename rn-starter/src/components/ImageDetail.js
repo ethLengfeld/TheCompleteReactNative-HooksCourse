@@ -4,7 +4,7 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 
 // const ImageDetail = (props) => {
 const ImageDetail = ({ title, imageSource, score }) => {
-
+  // TODO add useState
   // console.log(props);
   return (
     <View>
