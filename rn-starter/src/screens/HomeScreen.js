@@ -37,6 +37,12 @@ const HomeScreen = ({ navigation }) => {
           navigation.navigate("Counter");
         }}
       />
+      <Button
+        title="Go to Color Demo"
+        onPress={() => {
+          navigation.navigate("Color");
+        }}
+      />
       {/* <TouchableOpacity onPress={() => {
           // console.log('List Pressed')
           props.navigation.navigate('List');
