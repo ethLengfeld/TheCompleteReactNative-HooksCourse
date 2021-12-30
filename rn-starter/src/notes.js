@@ -14,4 +14,8 @@ that needs to Read or Change a state value
 calledback function to change the state value as a prop.
 
 When a parent rerends, so will it's children
+
+When to use a Reducer? (FunctionThatManagesChangeToAnObject)
+-We have mutiple state variables that are closely related
+-Precise and well-known ways to update these values
 */
