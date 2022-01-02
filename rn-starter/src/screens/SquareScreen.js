@@ -6,7 +6,16 @@ const CHANGE_VAL = 10;
 
 // action = how should we change the state object
 const reducer = (state, action) => {
-    
+    switch(action.colorToChange) {
+      case 'red':
+        return {...state, red: state.red + action.amount };
+      case 'green':
+        return {...state, green: state.green + action.amount };
+      case 'blue':
+        return {...state, blue: state.blue + action.amount };
+      default:
+        return state;
+    }
 }
 
 const SquareScreen = () => {
