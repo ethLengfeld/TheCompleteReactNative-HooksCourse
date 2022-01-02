@@ -18,4 +18,5 @@ When a parent rerends, so will it's children
 When to use a Reducer? (FunctionThatManagesChangeToAnObject)
 -We have mutiple state variables that are closely related
 -Precise and well-known ways to update these values
+- react hook library for reducer is { useReducer }
 */
