@@ -19,4 +19,10 @@ When to use a Reducer? (FunctionThatManagesChangeToAnObject)
 -We have mutiple state variables that are closely related
 -Precise and well-known ways to update these values
 - react hook library for reducer is { useReducer }
+
+-Usually, by convention a reducer has two parameters
+type: String that describes the exact change operation we want to make
+payload: Some data that is critical to the change operation
+
+{ type:'change_red', payload:15 }
 */
