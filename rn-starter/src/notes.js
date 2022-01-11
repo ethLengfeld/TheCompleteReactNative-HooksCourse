@@ -25,4 +25,9 @@ type: String that describes the exact change operation we want to make
 payload: Some data that is critical to the change operation
 
 { type:'change_red', payload:15 }
+
+Layout
+1. Box Object Model - Use this to affect the positioning of a single element
+2. Flex Box - Use this to position multiple elements with a common parent
+3. Position - Use this override Box Object Model + Flex Box
 */
