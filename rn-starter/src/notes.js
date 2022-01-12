@@ -30,4 +30,18 @@ Layout
 1. Box Object Model - Use this to affect the positioning of a single element
 2. Flex Box - Use this to position multiple elements with a common parent
 3. Position - Use this override Box Object Model + Flex Box
+
+Parent styling: (change how children elements are displayed)
+alignItems
+justifyContent
+flexDirection (column (default), row)
+
+Child styling:
+flex
+justifySelf
+
+position (relative, absolute)
+
+top, bottom, left, right will ignore for children elements
+
 */
