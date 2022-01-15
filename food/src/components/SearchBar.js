@@ -7,7 +7,7 @@ const SearchBar = () => {
     const [ searchInput, setSearchInput ] = useState('');
     return (
         <View style={styles.background}>
-            <Feather name="search" style={styles.searchIcon} />
+            <Feather name="search" style={styles.searchIcon} size={40} />
             <TextInput 
                 value={searchInput}
                 onChangeText={(newInput) => {
@@ -21,14 +21,15 @@ const SearchBar = () => {
 const styles = StyleSheet.create({
     background: {
         backgroundColor: '#F0EEEE',
+        // backgroundColor: 'red',
         marginHorizontal: 20,
         marginVertical: 15,
         borderRadius: 3,
-        height: 50,
-        width: 90,
+        height: 70,
+        width: 380,
     },
     searchIcon: {
-        size: 40,
+        // size: 40,
         margin: 5,
     }
 });
