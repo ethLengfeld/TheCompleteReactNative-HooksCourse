@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import SearchBar from '../components/SearchBar';
 
 const SearchScreen = () => {
 
+    const [ searchInput, setSearchInput ] = useState('');
+
     return (
         <View style={styles.background}>
             <Text>Welcome to Search Screen</Text>
-            <SearchBar />
+            <SearchBar searchInput={searchInput} searchInputChange={(newInput) => setSearchInput(newInput)} />
+            <Text>You want to search on: {searchInput}</Text>
         </View>
     );
 };
