@@ -2,7 +2,7 @@ import React from "react";
 import { View, TextInput, StyleSheet } from "react-native";
 import { Feather } from "@expo/vector-icons";
 
-const SearchBar = ({ searchInput, searchInputChange }) => {
+const SearchBar = ({ searchInput, searchInputChange, onSearchSubmit }) => {
   return (
     <View style={styles.backgroundStyle}>
       <Feather name="search" style={styles.searchIcon} />
@@ -15,6 +15,7 @@ const SearchBar = ({ searchInput, searchInputChange }) => {
         onChangeText={(newInput) => {
           searchInputChange(newInput);
         }}
+        onEndEditing={() => onSearchSubmit()}
       />
     </View>
   );
@@ -35,7 +36,7 @@ const styles = StyleSheet.create({
   },
   searchInput: {
     flex: 1,
-    fontSize: 20,
+    fontSize: 15,
   },
 });
 

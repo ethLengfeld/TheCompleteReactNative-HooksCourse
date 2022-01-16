@@ -44,6 +44,16 @@ position (relative, absolute)
 
 top, bottom, left, right will ignore for children elements
 
+fetch vs axios
+Fetch - 
+* Built in function for making network requests
+* Error handling is a bit weird
+* Requires us to write a lot of wrapper code to make it work 'sensibly'
+
+Axios - 
+* Separate library for making requests
+* Easy to use, sensible defaults
+* Increases our app size (very, very slightly)
 
 FOOD APP
 Client ID
