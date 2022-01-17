@@ -25,13 +25,13 @@ const styles = StyleSheet.create({
   backgroundStyle: {
     backgroundColor: "#F0EEEE",
     flexDirection: "row",
-    margin: 20,
+    margin: 15,
     borderRadius: 3,
     height: 50,
   },
   searchIcon: {
     fontSize: 40,
-    marginHorizontal: 10,
+    marginHorizontal: 5,
     alignSelf: "center",
   },
   searchInput: {

@@ -55,6 +55,15 @@ Axios -
 * Easy to use, sensible defaults
 * Increases our app size (very, very slightly)
 
+
+useEffect
+useEffect(() => {}) // Run the arrow function EVERY TIME the component is rendered
+useEffect(() => {}, []) // Run the arrow function ONLY when the component is FIRST rendered
+useEffect(() => {}, [value]) // Run the arrow function ONLY when the component is FIRST rendered,
+                             // AND when the 'value' changes
+
+.
+
 FOOD APP
 Client ID
 nWz4civNGCWbAQRto-iJ4g

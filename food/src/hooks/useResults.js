@@ -3,7 +3,6 @@ import yelp from "../api/yelp";
 
 export default () => {
   const [results, setResults] = useState([]);
-  const [searched, setSearched] = useState(false);
   const [errMessage, setErrMessage] = useState("");
 
   const searchApi = async (searchTerm) => {
@@ -17,7 +16,6 @@ export default () => {
       });
       setResults(response.data.businesses);
       setErrMessage("");
-      setSearched(true);
     } catch (err) {
       setErrMessage("Something went wrong");
     }
@@ -32,5 +30,5 @@ export default () => {
     searchApi("chicago");
   }, []); // can this once
 
-  return [searchApi, results, searched, errMessage];
+  return [searchApi, results, errMessage];
 };
