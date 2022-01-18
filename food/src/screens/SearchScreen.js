@@ -8,7 +8,7 @@ const SearchScreen = () => {
   const [searchInput, setSearchInput] = useState("");
   // MOVED state and effect from here TO useResults Hook
   const [searchApi, results, errMessage] = useResults();
-  const [searched, setSearched] = useState(false);
+  // const [searched, setSearched] = useState(false);
 
   // helper function to filter results by Price $ || $$ || $$$
   const filterResultsByPrice = (price) => {
@@ -21,13 +21,13 @@ const SearchScreen = () => {
     // <View style={styles.background}>
     // View may be constraining to our layout
     // INSTEAD we can use empty element
-    <>    
+    <>
       <SearchBar
         searchInput={searchInput}
         searchInputChange={(newInput) => setSearchInput(newInput)}
         onSearchSubmit={() => {
           searchApi(searchInput);
-          setSearched(true);
+          // setSearched(true);
         }}
       />
       {errMessage ? (
@@ -39,13 +39,16 @@ const SearchScreen = () => {
           title="Cost Effective"
           results={filterResultsByPrice("$")}
         />
-        <ResultsList title="Bit Pricier" results={filterResultsByPrice("$$")} />
+        <ResultsList
+          title="Bit Pricier"
+          results={filterResultsByPrice("$$")}
+        />
         <ResultsList
           title="Big Spender!"
           results={filterResultsByPrice("$$$")}
         />
       </ScrollView>
-      </>
+    </>
     // </View>
   );
 };
