@@ -70,4 +70,7 @@ nWz4civNGCWbAQRto-iJ4g
 
 API Key
 JPBvjorxJAjonpzP9SirKdtcfyH-zDi0g3jQrNYe-AGL2LWYtfuAeWjsCX_ksnwPuUlcYoGSYkRxOI-1nGRjb2Kbb9NME7LAdg1fSwQk-sALcRcm9XpXc0AzOZLfYXYx
+
+
+Redux - used for global state management
 */
