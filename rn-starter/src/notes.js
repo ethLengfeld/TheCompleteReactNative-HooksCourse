@@ -73,4 +73,12 @@ JPBvjorxJAjonpzP9SirKdtcfyH-zDi0g3jQrNYe-AGL2LWYtfuAeWjsCX_ksnwPuUlcYoGSYkRxOI-1
 
 
 Redux - used for global state management
+
+
+Context
+- Moves information from a parent to some nested child
+- Complicated to setup, lots of special terms
+- Easy to communicate data from a parent to a super nested child
+
+
 */
