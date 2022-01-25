@@ -4,10 +4,7 @@ const BlogContext = React.createContext();
 
 export const BlogProvider = ({ children }) => {
   const [blogPosts, setBlogPosts] = useState([]);
-  //   const blogPosts = [
-  //       { title: "Blog Post #1" },
-  //       { title: "Blog Post #2" },
-  //   ];
+
   const addBlogPost = () => {
     setBlogPosts([
       ...blogPosts,
