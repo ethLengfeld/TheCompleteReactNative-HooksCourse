@@ -3,13 +3,13 @@ import { View, Text, TextInput, StyleSheet } from 'react-native';
 import { Context } from "../context/BlogContext";
 
 const EditScreen = ({ navigation }) => {
-    const [title, setTitle] = useState('');
-    const [content, setContent] = useState('');
     const { state } = useContext(Context);
-
     const blogPost = state.find(
       (blogPost) => blogPost.id === navigation.getParam("id")
     );
+    
+    const [title, setTitle] = useState(blogPost.title);
+    const [content, setContent] = useState(blogPost.content);
 
     return (
         <View>
