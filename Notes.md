@@ -91,3 +91,11 @@ Redux - used for global state management
 - Moves information from a parent to some nested child
 - Complicated to setup, lots of special terms
 - Easy to communicate data from a parent to a super nested child
+
+## To Use Server
+
+  1. `expo start`
+  
+  2. `npm run db`
+
+  3. `npm run tunnel`
