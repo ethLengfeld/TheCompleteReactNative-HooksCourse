@@ -14,6 +14,15 @@ const IndexScreen = ({ navigation }) => {
 
   useEffect(() => {
     getBlogPost();
+    
+    // re-render on changes
+    const listener = navigation.addListener('didFocus', () => {
+      getBlogPost();
+    })
+    // clean up listener to prevent memory leak
+    return () => {
+      listener.remove();
+    };
   }, []);
 
   return (
