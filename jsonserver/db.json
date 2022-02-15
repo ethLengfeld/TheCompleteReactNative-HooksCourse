@@ -1,9 +1,9 @@
 {
   "blogposts": [
     {
-      "id": 1,
-      "title": "API POST",
-      "content": "Content for my post."
+      "title": "Title #1",
+      "content": "Here’s some content for you",
+      "id": 1
     }
   ]
 }
