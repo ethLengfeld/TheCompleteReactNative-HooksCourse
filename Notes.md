@@ -99,3 +99,9 @@ Redux - used for global state management
   2. `npm run db`
 
   3. `npm run tunnel`
+
+# Track Server
+
+first install: `npm install bcrypt express jsonwebtoken mongoose nodemon`
+
+Using Express API with MongoDB
