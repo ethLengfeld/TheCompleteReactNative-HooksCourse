@@ -104,4 +104,14 @@ Redux - used for global state management
 
 first install: `npm install bcrypt express jsonwebtoken mongoose nodemon`
 
+run: `npm run dev`
+
 Using Express API with MongoDB
+
+## JSON Web Token
+
+- Similar to a diver's license
+- Unique id to validate user owns that account
+- Created using a special key that only the server knows
+- Not possible to create a new JWT or change info in an exisiting one without that key
+- example: <https://jwt.io/>
