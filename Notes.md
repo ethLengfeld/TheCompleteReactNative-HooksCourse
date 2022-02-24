@@ -115,3 +115,10 @@ Using Express API with MongoDB
 - Created using a special key that only the server knows
 - Not possible to create a new JWT or change info in an exisiting one without that key
 - example: <https://jwt.io/>
+
+## React Navigation
+
+- Stack Navigator: Classic back-and-forth between different nested screens
+- Bottom Tab Navigator: Shows a tab bar at the bottom with buttons to navigate between screens
+- Switch Navigator: Abrupt, 100% cuts between different screens
+- Drawer Navigator: Shows a fly-out menu from one side of the device
