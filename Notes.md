@@ -122,4 +122,3 @@ Using Express API with MongoDB
 - Bottom Tab Navigator: Shows a tab bar at the bottom with buttons to navigate between screens
 - Switch Navigator: Abrupt, 100% cuts between different screens
 - Drawer Navigator: Shows a fly-out menu from one side of the device
-
