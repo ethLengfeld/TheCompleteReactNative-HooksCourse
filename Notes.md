@@ -94,7 +94,7 @@ Redux - used for global state management
 
 ## To Use Server
 
-  1. `expo start`
+  1. `expo start` -> update app.js
   
   2. `npm run db`
 
