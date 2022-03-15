@@ -105,6 +105,7 @@ Redux - used for global state management
 first install: `npm install bcrypt express jsonwebtoken mongoose nodemon`
 
 run: `npm run dev`
+run: `ngrok 3000 http`
 
 Using Express API with MongoDB
 
