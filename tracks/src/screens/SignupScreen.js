@@ -45,7 +45,9 @@ const SignupScreen = ({ navigation }) => {
       </Spacer>
       <TouchableOpacity onPress={() => navigation.navigate("Signin")}>
         <Spacer>
-          <Text h4 style={styles.link}>Already have an account? Sign in instead</Text>
+          <Text h4 style={styles.link}>
+            Already have an account? Sign in instead
+          </Text>
         </Spacer>
       </TouchableOpacity>
     </View>
@@ -70,8 +72,8 @@ const styles = StyleSheet.create({
     color: "red",
   },
   link: {
-    color: 'blue'
-  }
+    color: "blue",
+  },
 });
 
 export default SignupScreen;
