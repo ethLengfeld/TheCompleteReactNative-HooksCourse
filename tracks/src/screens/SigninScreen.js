@@ -10,13 +10,13 @@ const SigninScreen = () => {
   return (
     <View style={styles.container}>
       <AuthForm 
-        headerText="Sign in to Tracker"
+        headerText="Sign In for Tracker"
         errorMessage={state.errorMessage}
         onSubmit={signin}
         submitButtonText="Sign In"
       />
       <NavLink
-        text="Don't have an account? Go back to Sign Up"
+        text="Don't have an account? Go back to sign up."
         routeName="Signup"
       />
     </View>
