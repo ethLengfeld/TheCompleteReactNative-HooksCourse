@@ -1,55 +1,24 @@
-import React, { useState, useContext } from "react";
-import { View, TouchableOpacity, StyleSheet } from "react-native";
-import { Text, Input, Button } from "react-native-elements";
-import Spacer from "../components/Spacer";
+import React, { useContext } from "react";
+import { View, StyleSheet } from "react-native";
+import AuthForm from "../components/AuthForm";
 import { Context as AuthContext } from "../context/AuthContext";
+import NavLink from "../components/NavLink";
 
 const SignupScreen = ({ navigation }) => {
   const { state, signup } = useContext(AuthContext);
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
 
   return (
     <View style={styles.container}>
-      <Spacer>
-        <Text h2>Sign Up for Tracker</Text>
-      </Spacer>
-      <Input
-        label="Email"
-        value={email}
-        onChangeText={setEmail}
-        autoCapitalize="none"
-        autoCorrect={false}
+      <AuthForm
+        headerText="Sign up for Tracker"
+        errorMessage={state.errorMessage}
+        onSubmit={signup}
+        submitButtonText="Sign Up"
       />
-      <Input
-        secureTextEntry
-        label="Password"
-        value={password}
-        onChangeText={setPassword}
-        autoCapitalize="none"
-        autoCorrect={false}
+      <NavLink
+        text="Already have an account? Sign in instead"
+        routeName="Signin"
       />
-
-      {state.errorMessage ? (
-        <Spacer>
-          <Text style={styles.errorMessage}>{state.errorMessage}</Text>
-        </Spacer>
-      ) : null}
-      <Spacer>
-        <Button
-          title="Sign Up"
-          onPress={() => {
-            signup({ email, password });
-          }}
-        />
-      </Spacer>
-      <TouchableOpacity onPress={() => navigation.navigate("Signin")}>
-        <Spacer>
-          <Text h4 style={styles.link}>
-            Already have an account? Sign in instead
-          </Text>
-        </Spacer>
-      </TouchableOpacity>
     </View>
   );
 };
@@ -65,14 +34,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     marginBottom: 250,
-  },
-  errorMessage: {
-    fontSize: 16,
-    fontWeight: "bold",
-    color: "red",
-  },
-  link: {
-    color: "blue",
   },
 });
 
