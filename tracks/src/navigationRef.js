@@ -1,4 +1,6 @@
 import { NavigationActions } from 'react-navigation';
+// get access to navigation anywhere in app
+
 
 // want to reassign value at some point in future
 let navigator;
