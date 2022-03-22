@@ -129,3 +129,6 @@ Using Express API with MongoDB
 - setItem(key, value) -> Stores info on the user's device
 - getItem(key) -> Retrieves an item that has been stored
 - removeItem(key) -> Remove some stored information
+
+TO ADD:
+<NavigationEvents onWillFocus={clearErrorMessage}
