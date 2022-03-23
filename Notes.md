@@ -130,5 +130,9 @@ Using Express API with MongoDB
 - getItem(key) -> Retrieves an item that has been stored
 - removeItem(key) -> Remove some stored information
 
-TO ADD:
-<NavigationEvents onWillFocus={clearErrorMessage}
+## Navigation Events
+
+- onWillFocus(): as you click the screen to navigate away
+- onDidFocus(): runs once navigation completes
+- onWillBlur(): called when about to navigate away
+- onDidBlur(): called once transition completes
