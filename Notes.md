@@ -136,3 +136,16 @@ Using Express API with MongoDB
 - onDidFocus(): runs once navigation completes
 - onWillBlur(): called when about to navigate away
 - onDidBlur(): called once transition completes
+
+## Location
+
+### Foreground Location Tracking
+
+- Gives us users location whenever our app is VISIBLE ON THE SCREEN
+- Easy to set up + use
+
+### Background Location Tracking
+
+- Gives us the users location AT ALL TIMES, EVEN IF THE APP IS NOT VISIBLE OR DEVICE IS LOCKED
+- Uses considerably more battery power
+- Much more complicated to set up
