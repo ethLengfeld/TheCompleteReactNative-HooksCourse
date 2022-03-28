@@ -76,6 +76,8 @@ type:
 3. useEffect(() => {}, [value]) // Run the arrow function ONLY when the component is FIRST rendered,
                              // AND when the 'value' changes
 
+- Notes on useEffect
+
 ## FOOD APP
 
 Client ID
