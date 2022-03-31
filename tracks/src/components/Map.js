@@ -5,7 +5,7 @@ import { Context as LocationContext } from "../context/LocationContext";
 
 const Map = () => {
     // destructure off currentLocation
-    const { state: { currentLocation } } = useContext(LocationContext);
+    const { state: { currentLocation, locations } } = useContext(LocationContext);
     // console.log(state);
     // let points = [];
     // for (let i = 0; i < 20; i++) {
@@ -39,11 +39,11 @@ const Map = () => {
                 longitudeDelta: 0.01
             }}
             // automatically update screen with new location
-            region={{
-                ...currentLocation.coords,
-                latitudeDelta: 0.01,
-                longitudeDelta: 0.01
-            }}
+            // region={{
+            //     ...currentLocation.coords,
+            //     latitudeDelta: 0.01,
+            //     longitudeDelta: 0.01
+            // }}
             >
                 {/* <Polyline coordinates={points}/> */}
                 <Circle 
@@ -52,6 +52,7 @@ const Map = () => {
                     strokeColor="rgba(158, 158, 255, 1.0)"
                     fillColor="rgba(158, 158, 255, 0.3)"
                 />
+                <Polyline coordinates={locations.map(loc => loc.coords)} />
             </MapView>
         </View>
     )
