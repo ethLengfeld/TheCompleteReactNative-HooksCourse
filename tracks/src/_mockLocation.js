@@ -1,11 +1,11 @@
 import * as Location from 'expo-location';
 
 // ~10 meters in lat & long
-const tenMetersWithDegrees = 0.001;
+const tenMetersWithDegrees = 0.0001;
 
 const getLocation = increment => {
     return {
-        timestamp: new Date(),
+        timestamp: 10000000,
         coords: {
             speed: 0,
             heading: 0,
@@ -25,4 +25,4 @@ setInterval(() => {
         location: getLocation(counter)
     });
     counter++;
-}, 3000)
+}, 1000)

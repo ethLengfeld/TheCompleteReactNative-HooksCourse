@@ -47,19 +47,19 @@ export default (shouldTrack, callback) => {
     const startWatching = async () => {
       try {
         const { granted } = await requestForegroundPermissionsAsync();
-        const subscriber = await watchPositionAsync(
-          {
-            // accuracy 1-5 km, the higher accuracy the more battery power
-            accuracy: Accuracy.BestForNavigation,
-            timeInterval: 3000,
-            // update every 10 meters
-            // distanceInterval: 10,
-          },
-          callback
-        );
         if (!granted) {
           throw new Error("Location permission not granted");
         }
+        subscriber = await watchPositionAsync(
+          {
+            // accuracy 1-5 km, the higher accuracy the more battery power
+            accuracy: Accuracy.BestForNavigation,
+            timeInterval: 1000,
+            // update every 10 meters
+            distanceInterval: 10,
+          },
+          callback
+        );
       } catch (e) {
         setErr(e);
       }
@@ -71,8 +71,8 @@ export default (shouldTrack, callback) => {
       if (subscriber) {
         // stop tracking location, remove subscriber
         subscriber.remove();
-        subscriber = null;
       }
+      subscriber = null;
     }
     return () => {
       if (subscriber) {

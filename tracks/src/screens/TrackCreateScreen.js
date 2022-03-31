@@ -9,7 +9,10 @@ import Map from "../components/Map";
 import TrackForm from "../components/TrackForm";
 
 const TrackCreateScreen = ({ isFocused }) => {
-  const { state: { recording }, addLocation } = useContext(LocationContext);
+  const {
+    state: { recording },
+    addLocation,
+  } = useContext(LocationContext);
 
   // update callback when state.recording is changed
   const callback = useCallback(

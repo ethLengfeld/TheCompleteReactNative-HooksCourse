@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { View, Text, ActivityIndicator, StyleSheet } from 'react-native';
+import { View, ActivityIndicator, StyleSheet } from 'react-native';
 import MapView, { Polyline, Circle } from 'react-native-maps';
 import { Context as LocationContext } from "../context/LocationContext";
 
@@ -34,16 +34,16 @@ const Map = () => {
         <View>
             <MapView style={styles.map} 
             initialRegion={{
-                ...currentLocation.coords,
+                ...initialLocation,
                 latitudeDelta: 0.01,
                 longitudeDelta: 0.01
             }}
             // automatically update screen with new location
-            // region={{
-            //     ...currentLocation.coords,
-            //     latitudeDelta: 0.01,
-            //     longitudeDelta: 0.01
-            // }}
+            region={{
+                ...currentLocation.coords,
+                latitudeDelta: 0.01,
+                longitudeDelta: 0.01
+            }}
             >
                 {/* <Polyline coordinates={points}/> */}
                 <Circle 
