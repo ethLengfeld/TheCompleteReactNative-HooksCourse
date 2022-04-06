@@ -36,8 +36,8 @@ const TrackCreateScreen = ({ isFocused }) => {
 };
 
 TrackCreateScreen.navigationOptions = {
-  title: 'Add Track',
-  tabBarIcon: <FontAwesome name="plus" size={20}/>
+  title: "Add Track",
+  tabBarIcon: <FontAwesome name="plus" size={20} />,
 };
 
 const styles = StyleSheet.create({
