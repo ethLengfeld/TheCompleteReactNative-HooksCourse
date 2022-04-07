@@ -34,15 +34,17 @@ const TrackForm = () => {
         )}
       </Spacer>
       <Spacer>
-        { !recording && locations.length ? <Button title="Save Recording" onPress={saveTrack} /> : null }
+        {!recording && locations.length ? (
+          <Button title="Save Recording" onPress={saveTrack} />
+        ) : null}
       </Spacer>
     </>
   );
 };
 
 const styles = StyleSheet.create({
-    stopBtn: {
-        color: 'red',
-    }
-})
+  stopBtn: {
+    color: "red",
+  },
+});
 export default TrackForm;
